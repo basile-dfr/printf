@@ -1,0 +1,10 @@
+make
+cc -Wall -Wextra -Werror main.c -L. -lftprintf -o test
+./test
+
+%c → ft_print_char
+%s → ft_print_str
+%d et %i → ft_print_int
+%u → ft_print_uint
+%x et %X → ft_print_hex
+%p → ft_print_ptr
