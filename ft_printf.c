@@ -9,13 +9,13 @@ int	ft_selection(char type, va_list args)
 	else if (type == 'd' || type == 'i')
 		return (ft_print_int(args));
 	else if (type == 'u')
-		return (1);
+		return (ft_print_uint(args));
 	else if (type == 'x')
-		return (1);
+		return (ft_print_hexmin(args));
 	else if (type == 'X')
-		return (1);
+		return (ft_print_hexmaj(args));
 	else if (type == 'p')
-		return (1);
+		return (ft_print_ptr(args));
 	else if (type == '%')
 	{
 		write (1, "%", 1);

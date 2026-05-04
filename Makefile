@@ -7,7 +7,10 @@ SOURCES = ft_printf.c \
           ft_print_char.c \
 		  ft_print_str.c \
 		  ft_print_int.c \
-		  ft_print_uint.c
+		  ft_print_uint.c \
+		  ft_print_hexmin.c \
+		  ft_print_hexmaj.c \
+		  ft_print_ptr.c
 
 OBJETS = $(SOURCES:.c=.o)
 
@@ -17,7 +20,7 @@ libft:
 	make -C libft
 
 $(NAME): $(OBJETS)
-	cp libft/libft.a $(NAME)  ///// macos compatibility
+	cp libft/libft.a $(NAME)
 	ar rcs $(NAME) $(OBJETS)
 
 %.o: %.c

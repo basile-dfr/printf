@@ -12,5 +12,8 @@ int	ft_print_char(va_list args);
 int	ft_print_str(va_list args);
 int	ft_print_int(va_list args);
 int	ft_print_uint(va_list args);
+int	ft_print_hexmin(va_list args);
+int	ft_print_hexmaj(va_list args);
+int	ft_print_ptr(va_list args);
 
 #endif
