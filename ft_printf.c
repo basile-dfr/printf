@@ -5,9 +5,9 @@ int	ft_selection(char type, va_list args)
 	if (type == 'c')
 		return (ft_print_char(args));
 	else if (type == 's')
-		return (1);
+		return (ft_print_str(args));
 	else if (type == 'd' || type == 'i')
-		return (1);
+		return (ft_print_int(args));
 	else if (type == 'u')
 		return (1);
 	else if (type == 'x')

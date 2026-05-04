@@ -1,5 +1,5 @@
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdlib.h>
 # include <stddef.h>
@@ -9,5 +9,8 @@
 
 int	ft_printf(const char *format, ...);
 int	ft_print_char(va_list args);
+int	ft_print_str(va_list args);
+int	ft_print_int(va_list args);
+int	ft_print_uint(va_list args);
 
 #endif

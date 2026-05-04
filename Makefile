@@ -5,6 +5,9 @@ FLAGS = -Wall -Wextra -Werror
 
 SOURCES = ft_printf.c \
           ft_print_char.c \
+		  ft_print_str.c \
+		  ft_print_int.c \
+		  ft_print_uint.c
 
 OBJETS = $(SOURCES:.c=.o)
 
@@ -14,7 +17,8 @@ libft:
 	make -C libft
 
 $(NAME): $(OBJETS)
-	ar rcs $(NAME) $(OBJETS) libft/libft.a
+	cp libft/libft.a $(NAME)  ///// macos compatibility
+	ar rcs $(NAME) $(OBJETS)
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@

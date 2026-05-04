@@ -3,8 +3,11 @@
 
 int main(void)
 {
-    ft_printf("Yo le s\n");                        // Affiche la string de base
-    ft_printf("Carac %c\n", 'B');          // Affiche la string + %c
-/* ft_printf("String : %s\n", "Basile");         // Affiche la string + %s
-    ft_printf("Nb : %d\n", 42);     */         // Affiche la string + %d
+    ft_printf("Yo le s\n");
+    ft_printf("Carac %c\n", 'B');         
+	ft_printf("String : %s\n", "Basile");         
+    ft_printf("Nb : %d\n", 42);   
+	ft_printf("Nb : %d\n", -442); 
+	ft_printf("Nb : %d\n", 456372);  
+	ft_printf("Nb : %d\n", 0);        
 }
